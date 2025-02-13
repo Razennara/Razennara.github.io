@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fce4ec;
+    margin: 0;
+}
+ 
+.container {
+    position: relative;
+}
+ 
+.valentines {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+ 
+.envelope {
+    width: 200px;
+    height: 120px;
+    background: #ff8a80;
+    position: absolute;
+    bottom: 0;
+    clip-path: polygon(0% 0%, 100% 0%, 50% 50%);
+}
+ 
+.front {
+    width: 200px;
+    height: 120px;
+    background: #ff5252;
+    position: absolute;
+    bottom: 0;
+}
+ 
+.card {
+    width: 180px;
+    height: 100px;
+    background: #fff3e0;
+    position: absolute;
+    bottom: 50px;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #d84315;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+ 
+.heart {
+    width: 20px;
+    height: 20px;
+    background: red;
+    position: absolute;
+    bottom: 130px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    clip-path: polygon(50% 0%, 100% 40%, 50% 100%, 0% 40%);
+}
