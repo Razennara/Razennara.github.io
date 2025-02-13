@@ -15,6 +15,7 @@ body {
     position: relative;
     width: 200px;
     height: 200px;
+    cursor: pointer;
 }
  
 .envelope {
@@ -26,12 +27,14 @@ body {
     clip-path: polygon(0% 0%, 100% 0%, 50% 50%);
 }
  
-.front {
+.flap {
     width: 200px;
-    height: 120px;
+    height: 60px;
     background: #ff5252;
     position: absolute;
-    bottom: 0;
+    top: -60px;
+    transform-origin: bottom;
+    transition: transform 0.5s ease-in-out;
 }
  
 .card {
@@ -50,15 +53,14 @@ body {
     font-weight: bold;
     color: #d84315;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease-in-out;
 }
  
-.heart {
-    width: 20px;
-    height: 20px;
-    background: red;
-    position: absolute;
-    bottom: 130px;
-    left: 50%;
-    transform: translateX(-50%) rotate(45deg);
-    clip-path: polygon(50% 0%, 100% 40%, 50% 100%, 0% 40%);
+/* เพิ่มเอฟเฟกต์เมื่อเปิดซอง */
+.open .flap {
+    transform: rotateX(180deg);
+}
+ 
+.open .card {
+    transform: translateY(-50px);
 }
