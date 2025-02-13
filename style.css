@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
 body {
   height: 100vh;
   display: flex;
@@ -7,6 +8,7 @@ body {
   background-color: #f2acac;
   font-family: 'Mochiy Pop P One', sans-serif;
 }
+
 input#open {
   display: none;
 }
@@ -16,7 +18,7 @@ input#open {
   width: 300px;
   height:300px;
   transform-style: preserve-3d;
-	transform: perspective(2500px);
+  transform: perspective(2500px);
   transition: .3s;
 }
 
@@ -76,6 +78,7 @@ input#open {
   left:0;
   box-shadow: inset 100px 20px 100px rgba(0,0,0,.1), 30px 0 50px rgba(0,0,0,0.1);
 }
+
 .note {
   position: relative;
   width: 200px;
@@ -111,6 +114,8 @@ input#open {
   left:65px;
   box-shadow:30px 0 #ba1c1c;
 }
+
+
 .text-one {
   position: absolute;
   color: #333;
